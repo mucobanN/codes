@@ -1,0 +1,11 @@
+girdi= int(input('Enter your number here: '))
+
+liste=[]
+for i in range(2, girdi):
+    if girdi % int(i) == 0:
+        liste.append(i)
+print(liste)
+if len(liste) != 0:
+    print(str(girdi)+' Not a Prime Number')
+elif len(liste) == 0:
+    print(str(girdi)+' Prime Number ')
