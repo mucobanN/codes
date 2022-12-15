@@ -19,4 +19,9 @@ def get_ip():
     print("saldırı başladı")
     os.system("ping -c {} {}".format(ping, ip))
     
-get_ip()
+    ip = ip.split(".")
+    if len(ip) != 4:
+        print("IP address {} doğru değil".format(ip))
+        
+    
+get_ip() 
